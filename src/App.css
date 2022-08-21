@@ -1,38 +1,112 @@
-.App {
+/* Home.js */
+
+.home{
+  height: 1000px;
+  border: 1px solid black;
+  background: linear-gradient(-20deg, rgba(249, 248, 245, 0.2) 50%, rgba(242, 153, 74, 0.2)50%);
   text-align: center;
+  font-family: 'Product Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  font-family: 'Product Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: #4E598C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+label > p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #817E9E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input, select{
+  width: 500px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #4E598C;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder{
+  padding: 10px;
+  font-family: 'Product Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.row input{
+  width: 250px;
+}
+
+.row select{
+  width: 200px;
+}
+
+.row >.state{
+  margin-left: 50px;
+}
+
+.buttons{
+  text-align: left;
+  margin-top: 40px;
+}
+
+button.submit{
+  background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #F2994A;
+  color: #FFFFFF;
+}
+
+button.cancel{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4E598C;
+  margin-left: 40px;
+  background: #ffffff;
+  border: 0;
+}
+
+
+/* Navbar.js */
+
+a{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 34px;
+  color: #BDBDBD;
 }
